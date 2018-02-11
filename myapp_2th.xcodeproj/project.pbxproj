@@ -95,6 +95,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED73616620302174001D982D /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		ED73616720302174001D982D /* hpg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hpg;
+			sourceTree = "<group>";
+		};
 		ED9F132E202A9FF700F4A514 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +134,8 @@
 		ED9F1339202A9FF700F4A514 /* myapp_2th */ = {
 			isa = PBXGroup;
 			children = (
+				ED73616720302174001D982D /* hpg */,
+				ED73616620302174001D982D /* main */,
 				ED9F133A202A9FF700F4A514 /* AppDelegate.h */,
 				ED9F133B202A9FF700F4A514 /* AppDelegate.m */,
 				ED9F136C202AA0B500F4A514 /* lays */,
