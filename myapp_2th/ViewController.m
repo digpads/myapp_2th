@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView_hpg.h"
 #import "Masonry.h"
 
 @interface ViewController ()
@@ -23,7 +24,18 @@
     //[self txtbox];
     
     //[self groupBox];
+    [self hpg];
+}
+
+- (void)hpg {
     
+    UIView_hpg *box1th = [UIView_hpg new];
+    [self.view addSubview:box1th];
+    [box1th mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(30);
+        make.left.mas_equalTo(16);
+        make.right.mas_equalTo(-16);
+    }];
 }
 
 - (void)groupBox {

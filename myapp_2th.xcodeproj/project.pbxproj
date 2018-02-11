@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0BD0F62EFA61F0120B2E6312 /* libPods-myapp_2th.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6CAD1FDF9E073E759284F6 /* libPods-myapp_2th.a */; };
+		ED7361AB203029E8001D982D /* UIView_hpg.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361AA203029E8001D982D /* UIView_hpg.m */; };
+		ED7361AE20303249001D982D /* UIView_banner_active.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361AD20303249001D982D /* UIView_banner_active.m */; };
+		ED7361B120303CC6001D982D /* UIView_nv.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361B020303CC6001D982D /* UIView_nv.m */; };
 		ED9F133C202A9FF700F4A514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F133B202A9FF700F4A514 /* AppDelegate.m */; };
 		ED9F133F202A9FF700F4A514 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F133E202A9FF700F4A514 /* ViewController.m */; };
 		ED9F1342202A9FF700F4A514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9F1340202A9FF700F4A514 /* Main.storyboard */; };
@@ -40,6 +43,12 @@
 		0E3FF143A2F44F285C0164C5 /* Pods-myapp_2th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp_2th.release.xcconfig"; path = "Pods/Target Support Files/Pods-myapp_2th/Pods-myapp_2th.release.xcconfig"; sourceTree = "<group>"; };
 		3C6CAD1FDF9E073E759284F6 /* libPods-myapp_2th.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myapp_2th.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BE4451B77E2932FB9BA351 /* Pods-myapp_2th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp_2th.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myapp_2th/Pods-myapp_2th.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7361A9203029E8001D982D /* UIView_hpg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_hpg.h; sourceTree = "<group>"; };
+		ED7361AA203029E8001D982D /* UIView_hpg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_hpg.m; sourceTree = "<group>"; };
+		ED7361AC20303249001D982D /* UIView_banner_active.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_banner_active.h; sourceTree = "<group>"; };
+		ED7361AD20303249001D982D /* UIView_banner_active.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_banner_active.m; sourceTree = "<group>"; };
+		ED7361AF20303CC6001D982D /* UIView_nv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_nv.h; sourceTree = "<group>"; };
+		ED7361B020303CC6001D982D /* UIView_nv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_nv.m; sourceTree = "<group>"; };
 		ED9F1337202A9FF700F4A514 /* myapp_2th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp_2th.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9F133A202A9FF700F4A514 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED9F133B202A9FF700F4A514 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +114,12 @@
 		ED73616720302174001D982D /* hpg */ = {
 			isa = PBXGroup;
 			children = (
+				ED7361A9203029E8001D982D /* UIView_hpg.h */,
+				ED7361AA203029E8001D982D /* UIView_hpg.m */,
+				ED7361AC20303249001D982D /* UIView_banner_active.h */,
+				ED7361AD20303249001D982D /* UIView_banner_active.m */,
+				ED7361AF20303CC6001D982D /* UIView_nv.h */,
+				ED7361B020303CC6001D982D /* UIView_nv.m */,
 			);
 			path = hpg;
 			sourceTree = "<group>";
@@ -388,10 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7361B120303CC6001D982D /* UIView_nv.m in Sources */,
 				ED9F133F202A9FF700F4A514 /* ViewController.m in Sources */,
 				ED9F1371202AA0E000F4A514 /* ViewController_lay1.m in Sources */,
 				ED9F134A202A9FF700F4A514 /* main.m in Sources */,
 				ED9F133C202A9FF700F4A514 /* AppDelegate.m in Sources */,
+				ED7361AE20303249001D982D /* UIView_banner_active.m in Sources */,
+				ED7361AB203029E8001D982D /* UIView_hpg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
