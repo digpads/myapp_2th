@@ -19,24 +19,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //[self txtplug];
-    //[self txt2plug];
-    //[self txtbox];
-    
-    //[self groupBox];
-    [self hpg];
+
+    [self main];
 }
 
-- (void)hpg {
+- (void)main {
     
-    UIView_hpg *box1th = [UIView_hpg new];
-    [self.view addSubview:box1th];
-    [box1th mas_makeConstraints:^(MASConstraintMaker *make) {
+    CGFloat kscreenwidth =  [UIScreen mainScreen].bounds.size.width;
+    UIScrollView *main = [UIScrollView new];
+    //main.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:main];
+    [main mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+    UIView *hpgBox = [UIView new];
+    [main addSubview:hpgBox];
+    [hpgBox mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(main);
+        make.height.mas_equalTo(900);
+        make.width.mas_equalTo([UIScreen mainScreen].bounds.size.width);
+    }];
+    
+    UIView_hpg *hpg = [UIView_hpg new];
+    [hpgBox addSubview:hpg];
+    [hpg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(30);
         make.left.mas_equalTo(16);
-        make.right.mas_equalTo(-16);
+        make.right.mas_equalTo(self.view).offset(-16);
+        
     }];
 }
+
+
 
 - (void)groupBox {
     

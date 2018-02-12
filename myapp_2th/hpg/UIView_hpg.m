@@ -31,6 +31,8 @@
     
 }
 
+
+
 - (void)nv {
     UIView_nv *nv = [UIView_nv new];
     [self addSubview:nv];
@@ -41,6 +43,15 @@
 }
 
 - (void)lay2th {
+    UIImageView *line = [UIImageView new];
+    line.image = [UIImage imageNamed:@"line"];
+    [self addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(200);
+        make.left.mas_equalTo(-16);
+    }];
+    
+    
     UIView_banner_active *bannerBox = [UIView_banner_active new];
     [self addSubview:bannerBox];
     [bannerBox mas_makeConstraints:^(MASConstraintMaker *make) {

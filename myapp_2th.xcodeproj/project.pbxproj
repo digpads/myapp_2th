@@ -11,6 +11,7 @@
 		ED7361AB203029E8001D982D /* UIView_hpg.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361AA203029E8001D982D /* UIView_hpg.m */; };
 		ED7361AE20303249001D982D /* UIView_banner_active.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361AD20303249001D982D /* UIView_banner_active.m */; };
 		ED7361B120303CC6001D982D /* UIView_nv.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7361B020303CC6001D982D /* UIView_nv.m */; };
+		ED9ECF0420312A7400223E86 /* UIView_bigimg.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9ECF0320312A7400223E86 /* UIView_bigimg.m */; };
 		ED9F133C202A9FF700F4A514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F133B202A9FF700F4A514 /* AppDelegate.m */; };
 		ED9F133F202A9FF700F4A514 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F133E202A9FF700F4A514 /* ViewController.m */; };
 		ED9F1342202A9FF700F4A514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9F1340202A9FF700F4A514 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		ED7361AD20303249001D982D /* UIView_banner_active.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_banner_active.m; sourceTree = "<group>"; };
 		ED7361AF20303CC6001D982D /* UIView_nv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_nv.h; sourceTree = "<group>"; };
 		ED7361B020303CC6001D982D /* UIView_nv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_nv.m; sourceTree = "<group>"; };
+		ED9ECF0220312A7400223E86 /* UIView_bigimg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_bigimg.h; sourceTree = "<group>"; };
+		ED9ECF0320312A7400223E86 /* UIView_bigimg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIView_bigimg.m; sourceTree = "<group>"; };
 		ED9F1337202A9FF700F4A514 /* myapp_2th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp_2th.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9F133A202A9FF700F4A514 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED9F133B202A9FF700F4A514 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				ED7361AD20303249001D982D /* UIView_banner_active.m */,
 				ED7361AF20303CC6001D982D /* UIView_nv.h */,
 				ED7361B020303CC6001D982D /* UIView_nv.m */,
+				ED9ECF0220312A7400223E86 /* UIView_bigimg.h */,
+				ED9ECF0320312A7400223E86 /* UIView_bigimg.m */,
 			);
 			path = hpg;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7361B120303CC6001D982D /* UIView_nv.m in Sources */,
+				ED9ECF0420312A7400223E86 /* UIView_bigimg.m in Sources */,
 				ED9F133F202A9FF700F4A514 /* ViewController.m in Sources */,
 				ED9F1371202AA0E000F4A514 /* ViewController_lay1.m in Sources */,
 				ED9F134A202A9FF700F4A514 /* main.m in Sources */,
@@ -576,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZSN2K22Q9;
 				INFOPLIST_FILE = myapp_2th/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "he18.myapp-2th";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,6 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZSN2K22Q9;
 				INFOPLIST_FILE = myapp_2th/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "he18.myapp-2th";
 				PRODUCT_NAME = "$(TARGET_NAME)";

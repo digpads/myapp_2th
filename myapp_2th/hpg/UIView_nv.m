@@ -7,6 +7,7 @@
 //
 
 #import "UIView_nv.h"
+#import "UIView_bigimg.h"
 #import "Masonry.h"
 
 @implementation UIView_nv
@@ -23,8 +24,17 @@
     self = [super init];
     if(self){
         [self allcol];
+        [self bigimg];
     } return self;
     
+}
+- (void)bigimg {
+    UIView_bigimg *imgs = [UIView_bigimg new];
+    [self addSubview:imgs];
+    [imgs mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0);
+        make.left.mas_equalTo(0);
+    }];
 }
 
 - (void)allcol {

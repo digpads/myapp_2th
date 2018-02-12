@@ -22,37 +22,30 @@
 - (instancetype)init {
     self = [super init];
     if(self){
-        [self bannerBox];
+        [self bannerlist];
     } return self;
     
 }
 
-- (void)bannerBox {
+
+- (void)bannerlist {
     
-    UIImageView *box = [UIImageView new];
-    box.image = [UIImage imageNamed:@"mk1"];
-    [self addSubview:box];
-    [box mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(0);
-        make.left.mas_equalTo(0);
-    }];
-    
-    UIImageView *box2 = [UIImageView new];
-    box2.image = [UIImage imageNamed:@"mk2"];
-    [self addSubview:box2];
-    [box2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(0);
-        make.left.mas_equalTo(box.mas_right).offset(14);
-    }];
-    
-    UIImageView *box3 = [UIImageView new];
-    box3.image = [UIImage imageNamed:@"mk3"];
-    [self addSubview:box3];
-    [box3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(0);
-        make.left.mas_equalTo(box2.mas_right).offset(14);
-    }];
-    
+    UIView *firstView = nil;
+    for (NSInteger i=1 ; i<4 ; i++) {
+        UIImageView *img = [UIImageView new];
+        img.image = [UIImage imageNamed:[NSString stringWithFormat:@"mk%ld",i]];
+        [self addSubview:img];
+        [img mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(0);
+            make.centerY.mas_equalTo(0);
+            if (!firstView) {
+                make.left.mas_equalTo(0);
+            }else {
+                make.left.mas_equalTo(firstView.mas_right).offset(14);
+            }
+        }];
+        firstView = img;
+    }
 }
 
 
