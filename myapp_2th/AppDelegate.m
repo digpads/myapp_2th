@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "hpgViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    hpgViewController *win = [hpgViewController new];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:win];
+//    self.window.rootViewController = nav;
+//    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

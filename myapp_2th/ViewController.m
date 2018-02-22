@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 #import "UIView_hpg.h"
+#import "hpgViewController.h"
 #import "Masonry.h"
 
 @interface ViewController ()
     @property (nonatomic, strong) UIImageView *collectIV;
+
+    @property (nonatomic, strong) UIButton *btn;
+
 @end
 
 @implementation ViewController
@@ -19,11 +23,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-    [self main];
+    
+    [self hpg];
 }
 
-- (void)main {
+- (void)loadUI {
+    [self.view addSubview:self.btn];
+    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view).offset(20);
+        make.left.mas_equalTo(self.view).offset(20);
+    }];
+}
+
+- (void)presentClick {
+    hpgViewController *hpg = [[hpgViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:hpg];
+    [self presentViewController:nav animated:YES completion:nil];
+
+}
+
+- (UIButton *)btn {
+    if (!_btn) {
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_btn setTitle:@"present" forState:UIControlStateNormal];
+        _btn.backgroundColor = [UIColor magentaColor];
+        [_btn addTarget:self action:@selector(presentClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _btn;
+}
+
+- (void)hpg {//old hpg
     
     CGFloat kscreenwidth =  [UIScreen mainScreen].bounds.size.width;
     UIScrollView *main = [UIScrollView new];
@@ -40,9 +69,9 @@
         make.width.mas_equalTo([UIScreen mainScreen].bounds.size.width);
     }];
     
-    UIView_hpg *hpg = [UIView_hpg new];
-    [hpgBox addSubview:hpg];
-    [hpg mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView_hpg *ui_hpg = [UIView_hpg new];
+    [hpgBox addSubview:ui_hpg];
+    [ui_hpg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(30);
         make.left.mas_equalTo(16);
         make.right.mas_equalTo(self.view).offset(-16);
